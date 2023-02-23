@@ -12,7 +12,7 @@ public class Array {
 	public static void main(String[] args) {
 		
 		//String strin1 = new String();
-		//String 또한 참조형이므로 new로 생성을 해서 초기화해야하지만 아주 많이 사용되므로 생성을 하지 않고도 초기화할 수 있도록 시스템에서
+		//String 또한 참조형이므로 new로 생성을 해서 초기화해야 하지만 아주 많이 사용되므로 생성을 하지 않고도 초기화할 수 있도록 시스템에서
 		//만들어 놓음
 		
 		//동일한 그룹의 데이터 변수로만 선언해서 사용할 때
@@ -74,7 +74,8 @@ public class Array {
 		System.out.println(extraScoreList); //[I@515f550a
 		System.out.println(scoreList[0]); //70
 		System.out.println(extraScoreList[0]); //70
-		
+		//위와 같은 문제점을 해결하기위해 배열 복사 기능을 하는 메서드들이 존재 함
+		//그러면 참조하는 변수의 메모리 주솟값은 달라지고 실제 데이터 값들만 가져올 수가 있게 됨
 		
 		
 		

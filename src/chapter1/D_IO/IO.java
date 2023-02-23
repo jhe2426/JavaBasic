@@ -6,7 +6,7 @@ import java.util.Scanner;
 //console을 통해서 개발자로부터 입력을 받을 때 Scanner 객체를 사용 함
 //console로 데이터를 출력할 땐 System 객체를 사용 함
 public class IO {
-	//리터럴 상수 : 글자 그대로(변수명 그 자체에) 의미가 있어서 이름이 없는 상수
+	//리터럴 상수는 데이터 그 자체를 의미
 	public static void main(String[] args) {
 		
 		
@@ -37,6 +37,10 @@ public class IO {
 //		System.out.print("입력 받은 값 : ");
 //		System.out.println(inputInteger);
 		
+		//scanner의 문제점은 
+		//같은 scanner을 두 번 입력 받을 때
+		//먼저 입력 받는 것이 있으면 해당 결괏값을 출력하면 이 출력된 값을 다음에 입력 받아야할 라인이라고 생각해서 입력을 할 수 없도록 하는 그런 오류가 있음
+		//해결 방법은 Scanner를 하나 더 생성해서 사용하면 위와 같은 문제점은 발생하지 않음
 		String inputString = scanner.nextLine();
 		System.out.println("입력 받은 문자열 : ");
 		System.out.println(inputString);

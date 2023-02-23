@@ -4,13 +4,17 @@ public class DataType {
 
 	public static void main(String[] args) {
 		
-		//리터럴 상수 : 글자 그대로(변수명 그 자체에) 의미가 있어서 이름이 없는 상수
-		//심볼릭 상수 : 상수를 기호화하여 변수처럼 이름을 지어 쓰는 상수(접근 제어자 final을 사용하여 값을 변경할 수 없게 되어 이 상수는 기호화가 됨)
+		//리터럴 : 리터럴은 데이터 그 자체를 뜻 한다. 
+
+		//상수는 변하지 않는 변수를 의미하며(메모리 위치) 메모리 값을 변경할 수 없다.
+		//리터럴은 변수의 값이 변하지 않는 데이터(메모리 위치안의 값)를 의미한다. 
+		
+		//리터럴 상수는 데이터 그 자체를 의미
 		
 		
 		//일반 상수 즉, 실수형이 아닌 수는 134이런 숫자는 기본 int형으로 인식을 하기 때문에 
 		//int형 타입의 범위를 벗어나 Long형으로 초기화를 할 때는 꼭 L를 붙여서 초기화를 해야지 Long형으로 인식을 하게 됨
-		//그러지 않고 int형 타입의 범위를 벗어나는 상수에 L을 붙이지 않으면 
+		//그러지 않고 Long형 타입에  상수에 L을 붙이지 않으면 
 		//Type mismatch: cannot convert from int to Long 이런 오류가 발생함
 		Long long1 = 1213_21314L;
 		//Long long2 = 1235324; <- L를 안 붙여서 오류가 발생하게 됨
@@ -50,6 +54,7 @@ public class DataType {
 		
 		//boolean type
 		//1 byte (false, true) 크기의 데이터를 가질 수 있는 논리형 데이터 타입
+		//실제 사용되는 데이터의 크기는 1비트인데 자바에서 처리하는 가장 작은 단위가 1byte이므로 boolean은 1byte이다.
 		boolean boolean1 = true;
 		boolean1 = false;
 		//boolean타입형의 리턴하는 변수명을 is, has를 붙여서 명명을 많이 함 ex) is**, has**
