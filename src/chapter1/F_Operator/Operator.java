@@ -205,8 +205,9 @@ public class Operator {
 		//조건 ? 참일 때 결과 : 거짓일 때 결과;
 		String string1 = number5 > number6 ? "3보다 큽니다." : "3보다 크지 않습니다.";
 		System.out.println(string1);
-		
-		
+		//삼항연산자를 이용해서 if else문을 사용하지 않고 if else문과 똑같은 의미로 표현한다.
+		string1 = number5 > number6 ? "3보다 큽니다." : number5 == number6 ? "3입니다." : "3보다 작습니다.";
+		System.out.println(string1);
 		
 		
 		

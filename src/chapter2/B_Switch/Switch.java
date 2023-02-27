@@ -81,7 +81,7 @@ public class Switch {
 		default : 
 			System.out.println("범위 초과");
 	}
-	 
+	 scanner.close();
 
 	}
 
