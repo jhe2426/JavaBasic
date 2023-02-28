@@ -48,7 +48,7 @@ public class While {
 		
 		System.out.println(number); 
 
-		//하나의 프로그램 이란?
+		//하나의 프로그램(기능) 이란?
 		// Input(입력) -> Process(절차) -> Output(출력)
 		//하나의 기능을 만들려면 입력에 해당하는 출력이 어떻게 나오는지를 생각을 한 뒤
 		//Process(절차)를 구성하면 됨
