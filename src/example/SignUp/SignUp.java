@@ -17,10 +17,6 @@ class SignUpDto{
 	String userName;
 }
 
-
-
-
-
 //회원가입 프로세스 구현
 public class SignUp {
 	//입력 받는 프로세스의 가장의 기본 프로세스는 필수로 입력되어야 하는 부분이 입력이 되었는지 확인

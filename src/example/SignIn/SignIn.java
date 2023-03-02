@@ -34,7 +34,9 @@ public class SignIn {
 		//그래서 띄어쓰기 또한 입력 받은 값으로 하고 싶지 않으면 isBlank()를 사용하면 됨
 		if(userId.isEmpty() || userPassword.isEmpty()) {
 			System.out.println("모두 입력하세요.");
-			return;	//return을 작성하면 쓰레드가(프로그램이) 종료가 됨
+			return;	//return을 작성하면 쓰레드가(프로그램이)(메인 메서드가) 종료가 됨
+			//메인 메서드는 리턴 값이 void이므로 반환 값이 없다.
+			//void형의 경우에도 조건에 따라 함수를 종료시키고자 할때 return 사용
 		}
 		
 		//3. 사용자 입력값과 저장된 값이 같은지 검증
@@ -42,7 +44,7 @@ public class SignIn {
 		if (!userId.equals(ID)  || !userPassword.equals(PASSWORD)) {
 			System.out.println("로그인 정보가 일치하지 않습니다.");
 			return;//return을 작성하면 쓰레드가(프로그램이) 종료가 됨
-			//return을 사용하지 않게 되면 프로그램이 끝나지 않아서 System.out.println("로그인 성공");가 무조건 실행이 됨 
+			//return을 사용하지 않게 되면 프로그램이(메인 메서드가) 끝나지 않아서 System.out.println("로그인 성공");가 무조건 실행이 됨 
 		}
 		System.out.println("로그인 성공");
 		
