@@ -75,9 +75,12 @@ public class Method1 {
 		//메서드 호출, 호출 시 인자로 전달한 값이 메서드의 매개변수에 각 각 복사됨
 		//참조형 매개변수 : 인스턴스의 주소가 복사됨, 변수의 값을 읽고 변경할 수 있음(read & write)
 		//참조형 매개변수는 주솟값을 복사하기 때문에 메서드에서 값이 변경되면 인자 값으로 넘긴 참조형 변수 또한 해당 값으로 변경 됨
+		//기본형 데이터는 값이 복사해오기 때문에 메서드 안에서 값이 변경 되어도 인자 값의 변수명의 값은 변화가 없음
 		double triangleSize = HigherMathematics.getTriangleSize(10, 0);
 		System.out.println(triangleSize);
 	
+		//클래스 메서드는 클래스명으로 접근하는 것이 옳지 인스턴스로 접근하는 것은 실행에는 오류가 없지만 맞는 방법은 아니라서 
+		//노란줄이 생긴 것
 		double circleSize = math.getCircleSize(5);
 		System.out.println(circleSize);
 		
