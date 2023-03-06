@@ -54,7 +54,7 @@ class Developer extends Human{
 		//this.name이 console에 찍히는 것임
 		//this.name을 해도 찍히지만 정확하게 name이 어디에 있는 것인지가 중요하므로 super.name으로 작성하는 것이 옳바르다.
 		//왜냐하면 name은 상속을 받아서 사용되는 것이므로
-		
+		//자식클래스에 존재하는 변수가 아니므로 정확하게 지칭해주는 것이 좋다.
 		System.out.println(super.name + "이 " + this.language + "로 " + this.position + "개발을 합니다.");
 	}
 }	
