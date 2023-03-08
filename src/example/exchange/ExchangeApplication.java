@@ -46,6 +46,7 @@ public class ExchangeApplication {
 
 		//비정상 출력이 나올 경우
 		//모두 입력되지 않았을 경우 (모두 입력하지 않았습니다.)
+		//입력한 화폐가 동일할 때 (동일한 화폐로 환전할 수 없습니다.)
 		//입력한 금액이 -혹은 0일 때 (유효한 금액이 아닙니다.)
 		//관리하고 있지 않은 화폐 종료일 때 (유효하지 않은 화폐 단위입니다.)
 		
@@ -85,14 +86,14 @@ public class ExchangeApplication {
 			}
 				
 			//왜 이 if문 설정해두면 원하는 값이 안 나오지?
-			//배열의 모든 요소와 입력 값을 비교를 함으로 당연히 for문을 돌다가 입력값가 배열의 요소와 같지 않은 것이 나오므로 해당 if문은 잘못 된 것
+			//배열의 모든 요소와 입력 값을 비교를 함으로 당연히 for문을 돌다가 입력값과 배열의 요소와 같지 않은 것이 나오므로 해당 if문은 잘못 된 것
 //			if (!exchangingCurrency.equals(managedCurrency) || !exchangedCurrency.equals(managedCurrency)) {
 //				System.out.println("유효하지 않은 화폐 단위입니다.");
 //				return;
 //			}
 			//왜 이 if문을 for문 안에 넣으면 원하는 값이 왜 안 나오지?
-			//for문이 돌아갈 때는 hasExchanging값과 hasExchanged값이 true가 아니므로
-			//정상적으로 입력이 됐다라는 가정하에 조건식이 완료가 된 후에야 hasExchanging값과 hasExchanged값이 true을 가지고 있으므로
+			//for문이 돌아갈 때는 hasExchanging값과 hasExchanged값이 바로 true가 되는 것이 아니므로
+			//정상적으로 입력이 됐다라는 가정하에 조건식이 완료가 된 후에야 확실히 hasExchanging값과 hasExchanged값이 true을 가지고 있으므로
 			//아래의 if문은 반복문 밖에 입력을 해야하는 것이다.
 //			if(!(hasExchanging && hasExchanged)) {
 //				System.out.println("유효하지 않은 화폐 단위입니다.");
