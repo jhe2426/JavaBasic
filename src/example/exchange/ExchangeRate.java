@@ -5,6 +5,7 @@ public class ExchangeRate {
 	
 	//외부에서 보이지 않게 하기 위해(정보 은닉) private접근 제어자를 사용
 	//해당 멤버 변수를 초기화 해주기 위해 변수를 매겨변수로 받는 public 생성자를 이용한다.
+	//멤버 변수를 가져와 사용하거나 가져와서 값을 바꿀 때는 접근제어자가 public인 setter메서드와 getter메서드를 호출하여 각 각의 작업을 한다. 
 	private String exchangingCurrency; //들어온 화폐  (ex. 원화, 달러, 엔화, 위완화...)
 	private String exchangedCurrency; //바꿀 화폐 (ex. 원화, 달러, 엔화, 위완화...)
 	private double exchangeRate; // 환율 ( 1000 / 1316.30)

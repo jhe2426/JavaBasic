@@ -33,14 +33,28 @@ public class ExchangeApplication {
 		//문자열 먼저 받은 뒤 숫자를 입력 받는 것이 좋음
 		//입력
 		Scanner scanner = new Scanner(System.in);
+		//try문에 변수가 선언이 되어있으면 지역변수가 되므로 사용하지 못하게 되므로 선언만 try문에서 빼 놓은 것
+		String exchangingCurrency = null;
+		String exchangedCurrency = null;
+		int amount = 0;
+		try {
+			System.out.println("넣을 화폐 : ");
+			 exchangingCurrency = scanner.nextLine();
+			System.out.println("바꿀 화폐 : ");
+			 exchangedCurrency = scanner.nextLine();
+			System.out.println("환전할 금액 : ");
+			 amount = scanner.nextInt();
+		}catch (Exception exception) {
+			//exception.printStackTrace();
+			System.out.println("입력 값의 타입이 맞지 않습니다.");
+			return;
+		} finally {
+			scanner.close();
+		} 
 		
-		System.out.println("넣을 화폐 : ");
-		String exchangingCurrency = scanner.nextLine();
-		System.out.println("바꿀 화폐 : ");
-		String exchangedCurrency = scanner.nextLine();
-		System.out.println("환전할 금액 : ");
-		int amount = scanner.nextInt();
-		scanner.close();
+
+		
+		
 		//입력 값이 잘 가져와지는 확인
 		//System.out.println(exchangingCurrency + " " + exchangedCurrency + " " + amount);
 
