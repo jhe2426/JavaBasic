@@ -131,9 +131,9 @@ public class CollectionClass {
 
 		//Lotto 응용(항상 로직을 짤 때 나올 결과 값이 무엇을 충족해야하는지 생각하면 거기에 알맞는 Collection을 찾아 로직을 작성하면 코드가 엄청 짧아짐)
 		Set<Integer> lotto = new TreeSet<Integer>();
+		Random ramdom = new Random();
 		System.out.println(lotto.size());
 		while (lotto.size() < 6) { //처음 lotto.size()가 0으로 시작하니깐 
-			Random ramdom = new Random();
 			int randomNumber = ramdom.nextInt(45) + 1;
 			lotto.add(randomNumber);
 		}
