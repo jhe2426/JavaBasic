@@ -116,6 +116,7 @@ public class ApiClass {
 				if(lotto[subIndex] == lottoNumber) {
 					System.out.println(lotto[subIndex] + "중복 제거 " + lotto[index] );
 					equal = true;
+					break;
 				}
 			
 				

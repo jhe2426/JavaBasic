@@ -110,7 +110,7 @@ public class DateTime {
 		System.out.println(dayOfYear);
 		int dayOfMonth = localDateTime.getDayOfMonth();
 		DayOfWeek dayOfWeek = localDateTime.getDayOfWeek(); //요일을 반환해줌
-		System.out.println(dayOfWeek);
+		System.out.println("dayOfWeek " + dayOfWeek);
 		
 		boolean isLeapYear = localDate.isLeapYear(); //윤달 인지 아닌지를 논리형으로 리턴해주는 메서드 Date 클래스에만 있음
 		
