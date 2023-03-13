@@ -21,11 +21,11 @@ public class ExchangeApplication {
 			//달러 - 원화
 			new ExchangeRate("USD", "KRW", 1318.8 / 1000),
 			//달러 - 엔화
-			new ExchangeRate("USD", "JPY", 1318.8 / 0.96035),
+			new ExchangeRate("USD", "JPY", 1318.8 / 9.6035),
 			//엔화 - 원화
 			new ExchangeRate("JPY", "KRW", 960.35 / 1000 ),
 			//엔화 - 달러
-			new ExchangeRate("JPY", "USD", 0.96035 / 1318.8)
+			new ExchangeRate("JPY", "USD", 9.6035 / 1318.8)
 	};
 	public static void main(String[] args) {
 		
